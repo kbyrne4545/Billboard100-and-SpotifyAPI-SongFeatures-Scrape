@@ -1,10 +1,11 @@
-# Interacting with the Spotify API
+# This script can be used to search manually for songs that the larger script does not find a match for
+
 import pandas as pd
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials 
 
-client_id = '344e801b609e4a82912c8942de5c543b'
-client_secret = '6dde89705ad642e9a83c828e0685135e'
+client_id = 'xxxxx'
+client_secret = 'xxxxx'
 client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager) 
 
@@ -35,7 +36,7 @@ df.insert(1,'Song Name', track_name)
 
 display(df)
 
-df.to_csv('samples.csv')
+df.to_csv('song_features.csv')
 
 
 
