@@ -8,8 +8,8 @@ import datetime
 
 
 # Register with Spotify for client_id and client_secret
-client_id = '344e801b609e4a82912c8942de5c543b'
-client_secret = '6dde89705ad642e9a83c828e0685135e'
+client_id = 'xxxxx'
+client_secret = 'xxxxxx'
 client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager) 
 
